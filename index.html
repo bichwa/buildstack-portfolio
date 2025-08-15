@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildStack - Simple Apps for Everyone</title>
+    <meta name="description" content="BuildStack - AI-powered apps that make life easier. Track fitness with FitJourney, study with StudyBuddy, and organize with TaskMaster.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+</head>
+<body>
+    <div id="app">
+        <!-- Landing Page -->
+        <div id="landing-page" class="page active">
+            <!-- Animated Background Elements -->
+            <div class="background-effects">
+                <div class="floating-orb orb-1"></div>
+                <div class="floating-orb orb-2"></div>
+                <div class="floating-orb orb-3"></div>
+                <div class="particles"></div>
+            </div>
+
+            <!-- Modern Header -->
+            <header class="modern-header">
+                <div class="container">
+                    <div class="header-content">
+                        <div class="logo-section">
+                            <div class="logo-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <rect x="9" y="9" width="6" height="6"/>
+                                    <path d="m15 2 6 6"/>
+                                    <path d="m9 22 6-6"/>
+                                </svg>
+                            </div>
+                            <div class="logo-text">
+                                <h1>BuildStack</h1>
+                                <p>AI-Powered Apps</p>
+                            </div>
+                        </div>
+                        <nav class="header-nav">
+                            <a href="#apps" class="nav-link">Apps</a>
+                            <a href="#about" class="nav-link">About</a>
+                            <a href="mailto:hello@buildstack.app" class="contact-btn">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="sparkle">✨</span>
+                            <span>Building the future, one app at a time</span>
+                        </div>
+                        
+                        <h1 class="hero-title">
+                            <span class="title-line">Apps That</span>
+                            <span class="title-highlight">Change Everything</span>
+                        </h1>
+                        
+                        <p class="hero-description">
+                            We craft beautiful, intelligent apps that solve real problems.<br>
+                            <strong>Simple to use, powerful by design.</strong>
+                        </p>
+
+                        <!-- Animated Stats -->
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <div class="stat-number">1,000+</div>
+                                <div class="stat-label">Happy Users</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">AI-Powered Apps</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number">Free</div>
+                                <div class="stat-label">To Start</div>
+                            </div>
+                        </div>
+
+                        <!-- CTA Button -->
+                        <a href="#apps" class="cta-button">
+                            <span>Explore Our Apps</span>
+                            <svg class="rocket-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Apps Section -->
+            <section id="apps" class="apps-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Our App Collection</h2>
+                        <p class="section-subtitle">Each app is crafted with love, powered by AI, and designed to make your life extraordinary</p>
+                    </div>
+
+                    <div class="apps-grid">
+                        <!-- Fit Sync App -->
+                        <div class="app-card" data-app="fitsync">
+                            <div class="card-glow fitsync-glow"></div>
+                            <div class="card-content">
+                                <div class="status-badge available">
+                                    <span class="sparkle">✨</span> Live Now
+                                </div>
+                                
+                                <div class="app-icon fitsync-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+                                    </svg>
+                                </div>
+
+                                <h3 class="app-title">Fit Sync</h3>
+                                <p class="app-description">Track your workouts and running progress with style</p>
+
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-check">✓</div>
+                                        Smart workout tracking
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-check">✓</div>
+                                        Strava integration
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-check">✓</div>
+                                        Beautiful progress charts
+                                    </div>
+                                </div>
+
+                                <a href="https://fitsync.buildstack.app" target="_blank" class="app-button fitsync-btn">
+                                    Launch Fit Sync →
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- StudyBuddy App -->
+                        <div class="app-card" data-app="studybuddy">
+                            <div class="card-glow studybuddy-glow"></div>
+                            <div class="card-content">
+                                <div class="status-badge coming-soon">
+                                    🚀 Soon
+                                </div>
+                                
+                                <div class="app-icon studybuddy-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44L2 17H1a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h1l5.04-2.94A2.5 2.5 0 0 1 9.5 2Z"/>
+                                        <path d="M23 9v6"/>
+                                        <path d="M19 9v6"/>
+                                        <path d="M15 9v6"/>
+                                    </svg>
+                                </div>
+
+                                <h3 class="app-title">StudyBuddy</h3>
+                                <p class="app-description">AI-powered learning that adapts to your style</p>
+
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-check">✓</div>
+                                        AI flashcards
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-check">✓</div>
+                                        Smart scheduling
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-check">✓</div>
+                                        Progress insights
+                                    </div>
+                                </div>
+
+                                <div class="app-button disabled">
+                                    Coming Soon...
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TaskMaster App -->
+                        <div class="app-card" data-app="taskmaster">
+                            <div class="card-glow taskmaster-glow"></div>
+                            <div class="card-content">
+                                <div class="status-badge coming-soon">
+                                    🚀 Soon
+                                </div>
+                                
+                                <div class="app-icon taskmaster-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                                    </svg>
+                                </div>
+
+                                <h3 class="app-title">TaskMaster</h3>
+                                <p class="app-description">Organize your life with intelligent task management</p>
+
+                                <div class="features-list">
+                                    <div class="feature-item">
+                                        <div class="feature-check">✓</div>
+                                        Smart prioritization
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-check">✓</div>
+                                        Auto-scheduling
+                                    </div>
+                                    <div class="feature-item">
+                                        <div class="feature-check">✓</div>
+                                        Team collaboration
+                                    </div>
+                                </div>
+
+                                <div class="app-button disabled">
+                                    Coming Soon...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Why Choose Us Section -->
+            <section id="about" class="features-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Why Choose BuildStack?</h2>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-glow pink-glow"></div>
+                            <div class="feature-content">
+                                <div class="feature-emoji">🎨</div>
+                                <h3>Beautiful Design</h3>
+                                <p>Every pixel crafted with love. Our apps don't just work—they delight.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-glow purple-glow"></div>
+                            <div class="feature-content">
+                                <div class="feature-emoji">🧠</div>
+                                <h3>AI-Powered</h3>
+                                <p>Smart features that learn from you and adapt to make your life easier.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <div class="feature-glow orange-glow"></div>
+                            <div class="feature-content">
+                                <div class="feature-emoji">⚡</div>
+                                <h3>Lightning Fast</h3>
+                                <p>Built for speed and performance. No waiting, no frustration, just results.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Email Signup Section -->
+            <section class="signup-section">
+                <div class="container">
+                    <div class="signup-card">
+                        <div class="signup-glow"></div>
+                        <div class="signup-content">
+                            <h2>Stay in the Loop</h2>
+                            <p>Be the first to know when we launch something amazing. Join our community of innovators and early adopters.</p>
+
+                            <div id="email-form" class="email-form">
+                                <input type="email" id="email-input" placeholder="your.email@example.com" class="email-input">
+                                <button onclick="submitEmail()" class="submit-btn">Join Waitlist ✨</button>
+                            </div>
+
+                            <div id="success-message" class="success-message" style="display: none;">
+                                <div class="success-emoji">🎉</div>
+                                <h3>Welcome Aboard!</h3>
+                                <p>You're now part of the BuildStack family. Get ready for something amazing!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-logo">
+                            <div class="logo-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <rect x="9" y="9" width="6" height="6"/>
+                                    <path d="m15 2 6 6"/>
+                                    <path d="m9 22 6-6"/>
+                                </svg>
+                            </div>
+                            <span>BuildStack</span>
+                        </div>
+                        
+                        <p class="footer-description">Crafting the future of mobile apps, one pixel at a time</p>
+                        
+                        <div class="footer-links">
+                            <a href="javascript:void(0)" onclick="showFitJourney()">FitJourney</a>
+                            <a href="mailto:hello@buildstack.app">Contact</a>
+                            <a href="#about">About</a>
+                        </div>
+                        
+                        <div class="footer-bottom">
+                            <p>© 2025 BuildStack.app - Made with ❤️ in Nairobi 🇰🇪</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- FitJourney Page -->
+        <div id="fitjourney-page" class="page">
+            <div class="fitjourney-container">
+                <div class="fitjourney-header">
+                    <button onclick="showLanding()" class="back-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="m12 19-7-7 7-7"/>
+                            <path d="m19 12H5"/>
+                        </svg>
+                        Back to BuildStack
+                    </button>
+                    
+                    <div class="fitjourney-title">
+                        <div class="fitjourney-logo">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
+                            </svg>
+                        </div>
+                        <h1>FitJourney</h1>
+                        <p>Express Way Marathon - Week 16</p>
+                        <span class="date-range">16th June - 22nd June 2025</span>
+                    </div>
+                </div>
+
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card blue-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Total Workouts</div>
+                            <div class="stat-value">5</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card green-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Total Distance</div>
+                            <div class="stat-value">105km</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card purple-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12,6 12,12 16,14"/>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Avg Pace</div>
+                            <div class="stat-value">5:30</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card orange-card">
+                        <div class="stat-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+                                <line x1="3" x2="21" y1="6" y2="6"/>
+                                <path d="M16 10a4 4 0 0 1-8 0"/>
+                            </svg>
+                        </div>
+                        <div class="stat-info">
+                            <div class="stat-label">Calories Burned</div>
+                            <div class="stat-value">4,200</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weekly Schedule -->
+                <div class="schedule-section">
+                    <h2>Marathon Training Schedule</h2>
+                    <div class="schedule-grid">
+                        <div class="day-card monday">
+                            <div class="day-header">
+                                <h3>Monday</h3>
+                                <span class="workout-type">Morning Run</span>
+                            </div>
+                            <div class="workout-details">
+                                <p><strong>Distance:</strong> 16km + 10km</p>
+                                <p><strong>Route:</strong> Chebet's, Wangige Karura</p>
+                                <p><strong>Start:</strong> 6:00am</p>
+                                <p><strong>Pace:</strong> Easy pace</p>
+                            </div>
+                        </div>
+
+                        <div class="day-card tuesday">
+                            <div class="day-header">
+                                <h3>Tuesday</h3>
+                                <span class="workout-type">Speed Work</span>
+                            </div>
+                            <div class="workout-details">
+                                <p><strong>Workout:</strong> Warm up 2km, 800m X 5 reps (Recovery 90 sec), 400m X 10 reps (Recovery 45 sec), Cool down 2km</p>
+                                <p><strong>Route:</strong> Vetlab Sports Club</p>
+                                <p><strong>Start:</strong> 5:40am</p>
+                            </div>
+                        </div>
+
+                        <div class="day-card wednesday">
+                            <div class="day-header">
+                                <h3>Wednesday</h3>
+                                <span class="workout-type">Morning Run</span>
+                            </div>
+                            <div class="workout-details">
+                                <p><strong>Distance:</strong> 16km + 10km</p>
+                                <p><strong>Route:</strong> Msanii and King'eero</p>
+                                <p><strong>Start:</strong> 6:00am</p>
+                                <p><strong>Pace:</strong> Easy pace</p>
+                            </div>
+                        </div>
+
+                        <div class="day-card thursday">
+                            <div class="day-header">
+                                <h3>Thursday</h3>
+                                <span class="workout-type">Speed Work</span>
+                            </div>
+                            <div class="workout-details">
+                                <p><strong>Workout:</strong> Warm up 4km, 3km Fartleks (1.1 X 20 reps 40min, 1.1 X 15 reps 30min), Cool down 2km</p>
+                                <p><strong>Start:</strong> 5:40am</p>
+                            </div>
+                        </div>
+
+                        <div class="day-card friday">
+                            <div class="day-header">
+                                <h3>Friday</h3>
+                                <span class="workout-type rest">Rest</span>
+                            </div>
+                            <div class="workout-details">
+                                <p><strong>Activity:</strong> Complete rest day</p>
+                                <p><strong>Focus:</strong> Recovery and preparation</p>
+                            </div>
+                        </div>
+
+                        <div class="day-card saturday">
+                            <div class="day-header">
+                                <h3>Saturday</h3>
+                                <span class="workout-type">Long Run</span>
+                            </div>
+                            <div class="workout-details">
+                                <p><strong>Distance:</strong> 32km, 25km or 22km options</p>
+                                <p><strong>Start:</strong> 6:00am</p>
+                                <p><strong>Pace:</strong> Marathon pace practice</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strava Section -->
+                <div class="strava-section">
+                    <h2>Strava Integration</h2>
+                    <div class="strava-card">
+                        <div class="strava-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                            </svg>
+                        </div>
+                        <div class="strava-content">
+                            <h3>Connect to Strava</h3>
+                            <p>Sync your workout data automatically from your Strava account</p>
+                            <button class="strava-button" onclick="alert('Strava integration coming soon!')">Connect Strava Account</button>
+                        </div>
+                    </div>
+                    
+                    <div class="strava-features">
+                        <h4>What you'll get with Strava integration:</h4>
+                        <ul>
+                            <li>• Automatic workout tracking and sync</li>
+                            <li>• Detailed pace and heart rate analysis</li>
+                            <li>• Route mapping and elevation data</li>
+                            <li>• Progress tracking over time</li>
+                            <li>• Social features and achievements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
