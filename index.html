@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BuildStack - Simple Apps for Everyone</title>
-    <meta name="description" content="BuildStack - AI-powered apps that make life easier. Track fitness with FitJourney, study with StudyBuddy, and organize with TaskMaster.">
+    <meta name="description" content="BuildStack - AI-powered apps that make life easier. Track fitness with FitSync, study with StudyBuddy, and organize with TaskMaster.">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
 </head>
@@ -40,6 +40,7 @@
                         </div>
                         <nav class="header-nav">
                             <a href="#apps" class="nav-link">Apps</a>
+                            <a href="#tools" class="nav-link">Free Tools</a>
                             <a href="#about" class="nav-link">About</a>
                             <a href="mailto:hello@buildstack.app" class="contact-btn">Contact</a>
                         </nav>
@@ -107,7 +108,7 @@
                     </div>
 
                     <div class="apps-grid">
-                        <!-- Fit Sync App -->
+                        <!-- FitSync App -->
                         <div class="app-card" data-app="fitsync">
                             <div class="card-glow fitsync-glow"></div>
                             <div class="card-content">
@@ -121,7 +122,7 @@
                                     </svg>
                                 </div>
 
-                                <h3 class="app-title">Fit Sync</h3>
+                                <h3 class="app-title">FitSync</h3>
                                 <p class="app-description">Track your workouts and running progress with style</p>
 
                                 <div class="features-list">
@@ -139,9 +140,9 @@
                                     </div>
                                 </div>
 
-                                <a href="https://fitsync.buildstack.app" target="_blank" class="app-button fitsync-btn">
-                                    Launch Fit Sync →
-                                </a>
+                                <button class="app-button fitsync-btn" onclick="showFitSync()">
+                                    Launch FitSync →
+                                </button>
                             </div>
                         </div>
 
@@ -219,6 +220,94 @@
                                 </div>
 
                                 <div class="app-button disabled">
+                                    Coming Soon...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Free Tools Section -->
+            <section id="tools" class="tools-section">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Free Tools</h2>
+                        <p class="section-subtitle">Powerful utilities to boost your productivity, completely free to use</p>
+                    </div>
+
+                    <div class="tools-grid">
+                        <!-- QR Blitz Creator Tool -->
+                        <div class="tool-card">
+                            <div class="tool-glow qr-glow"></div>
+                            <div class="tool-content">
+                                <div class="tool-icon qr-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="3" y="3" width="5" height="5"/>
+                                        <rect x="12" y="12" width="5" height="5"/>
+                                        <rect x="3" y="12" width="5" height="5"/>
+                                        <rect x="12" y="3" width="5" height="5"/>
+                                        <rect x="7" y="7" width="1" height="1"/>
+                                        <rect x="19" y="7" width="1" height="1"/>
+                                        <rect x="7" y="19" width="1" height="1"/>
+                                        <rect x="19" y="19" width="1" height="1"/>
+                                    </svg>
+                                </div>
+
+                                <h3 class="tool-title">QR Blitz Creator</h3>
+                                <p class="tool-description">Generate beautiful QR codes instantly with custom styling options</p>
+
+                                <div class="tool-features">
+                                    <div class="tool-feature">
+                                        <div class="tool-feature-check">✓</div>
+                                        Instant QR generation
+                                    </div>
+                                    <div class="tool-feature">
+                                        <div class="tool-feature-check">✓</div>
+                                        Custom colors & styles
+                                    </div>
+                                    <div class="tool-feature">
+                                        <div class="tool-feature-check">✓</div>
+                                        High-resolution download
+                                    </div>
+                                </div>
+
+                                <a href="https://buildstack.app/qr" class="tool-button qr-btn" target="_blank" rel="noopener">
+                                    Use QR Blitz Creator →
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Placeholder for future tools -->
+                        <div class="tool-card upcoming">
+                            <div class="tool-glow upcoming-glow"></div>
+                            <div class="tool-content">
+                                <div class="tool-icon upcoming-icon">
+                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="3"/>
+                                        <path d="M12 1v6M12 17v6M4.22 4.22l4.24 4.24M15.54 15.54l4.24 4.24M1 12h6M17 12h6M4.22 19.78l4.24-4.24M15.54 8.46l4.24-4.24"/>
+                                    </svg>
+                                </div>
+
+                                <h3 class="tool-title">More Tools Coming</h3>
+                                <p class="tool-description">We're working on exciting new tools to add to our collection</p>
+
+                                <div class="tool-features">
+                                    <div class="tool-feature">
+                                        <div class="tool-feature-check">?</div>
+                                        Color palette generator
+                                    </div>
+                                    <div class="tool-feature">
+                                        <div class="tool-feature-check">?</div>
+                                        Text formatter
+                                    </div>
+                                    <div class="tool-feature">
+                                        <div class="tool-feature-check">?</div>
+                                        Image compressor
+                                    </div>
+                                </div>
+
+                                <div class="tool-button disabled">
                                     Coming Soon...
                                 </div>
                             </div>
@@ -308,7 +397,8 @@
                         <p class="footer-description">Crafting the future of mobile apps, one pixel at a time</p>
                         
                         <div class="footer-links">
-                            <a href="javascript:void(0)" onclick="showFitJourney()">FitJourney</a>
+                            <a href="https://fitsync.buildstack.app/" target="_blank" rel="noopener">FitSync</a>
+                            <a href="https://buildstack.app/qr" target="_blank" rel="noopener">QR Blitz Creator</a>
                             <a href="mailto:hello@buildstack.app">Contact</a>
                             <a href="#about">About</a>
                         </div>
@@ -321,10 +411,10 @@
             </footer>
         </div>
 
-        <!-- FitJourney Page -->
-        <div id="fitjourney-page" class="page">
-            <div class="fitjourney-container">
-                <div class="fitjourney-header">
+        <!-- FitSync Page -->
+        <div id="fitsync-page" class="page">
+            <div class="fitsync-container">
+                <div class="fitsync-header">
                     <button onclick="showLanding()" class="back-button">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="m12 19-7-7 7-7"/>
@@ -333,13 +423,13 @@
                         Back to BuildStack
                     </button>
                     
-                    <div class="fitjourney-title">
-                        <div class="fitjourney-logo">
+                    <div class="fitsync-title">
+                        <div class="fitsync-logo">
                             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z"/>
                             </svg>
                         </div>
-                        <h1>FitJourney</h1>
+                        <h1>FitSync</h1>
                         <p>Express Way Marathon - Week 16</p>
                         <span class="date-range">16th June - 22nd June 2025</span>
                     </div>
@@ -509,6 +599,1929 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+// Page navigation functions
+function showLanding() {
+    document.getElementById('landing-page').classList.add('active');
+    document.getElementById('fitsync-page').classList.remove('active');
+    window.scrollTo(0, 0);
+}
+
+function showFitSync() {
+    // Redirect to the actual FitSync app
+    window.open('https://fitsync.buildstack.app/', '_blank');
+}
+
+// Email submission function
+function submitEmail() {
+    const emailInput = document.getElementById('email-input');
+    const emailForm = document.getElementById('email-form');
+    const successMessage = document.getElementById('success-message');
+    
+    const email = emailInput.value.trim();
+    
+    if (email && isValidEmail(email)) {
+        // Hide form and show success message
+        emailForm.style.display = 'none';
+        successMessage.style.display = 'block';
+        
+        // Log email (in production, send to your backend)
+        console.log('Email submitted:', email);
+        
+        // Optional: Send to your backend
+        // sendEmailToBackend(email);
+        
+        // Add fade-in animation
+        successMessage.classList.add('fade-in');
+    } else {
+        alert('Please enter a valid email address.');
+        emailInput.focus();
+    }
+}
+
+// Email validation function
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+// Handle Enter key press in email input
+document.addEventListener('DOMContentLoaded', function() {
+    const emailInput = document.getElementById('email-input');
+    if (emailInput) {
+        emailInput.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                submitEmail();
+            }
+        });
+    }
+    
+    // Add scroll animations
+    addScrollAnimations();
+    
+    // Add smooth scrolling for anchor links
+    addSmoothScrolling();
+});
+
+// Scroll animations
+function addScrollAnimations() {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in');
+            }
+        });
+    }, observerOptions);
+    
+    // Observe elements that should animate on scroll
+    const animateElements = document.querySelectorAll('.app-card, .tool-card, .feature-card, .stat-card, .day-card');
+    animateElements.forEach(el => {
+        observer.observe(el);
+    });
+}
+
+// Smooth scrolling for anchor links
+function addSmoothScrolling() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+}
+
+// Particle animation enhancement
+function createParticles() {
+    const particlesContainer = document.querySelector('.particles');
+    if (!particlesContainer) return;
+    
+    for (let i = 0; i < 50; i++) {
+        const particle = document.createElement('div');
+        particle.style.position = 'absolute';
+        particle.style.width = '2px';
+        particle.style.height = '2px';
+        particle.style.background = 'white';
+        particle.style.borderRadius = '50%';
+        particle.style.opacity = Math.random() * 0.5 + 0.2;
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.animation = `float ${3 + Math.random() * 4}s ease-in-out infinite`;
+        particle.style.animationDelay = Math.random() * 5 + 's';
+        
+        particlesContainer.appendChild(particle);
+    }
+}
+
+// Initialize particles on load
+document.addEventListener('DOMContentLoaded', createParticles);
+
+// Handle window resize for responsive animations
+window.addEventListener('resize', function() {
+    // Recalculate animations if needed
+    const isMobile = window.innerWidth <= 768;
+    
+    if (isMobile) {
+        // Disable some heavy animations on mobile for performance
+        document.body.classList.add('mobile');
+    } else {
+        document.body.classList.remove('mobile');
+    }
+});
+
+// Performance optimization: Reduce animations on slower devices
+function optimizeForPerformance() {
+    // Simple performance test
+    const start = performance.now();
+    for (let i = 0; i < 100000; i++) {
+        Math.random();
+    }
+    const end = performance.now();
+    
+    if (end - start > 10) {
+        // Slow device detected, reduce animations
+        document.body.classList.add('reduced-motion');
+    }
+}
+
+// Call performance optimization
+document.addEventListener('DOMContentLoaded', optimizeForPerformance);
+
+// Stats counter animation
+function animateStats() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    
+    statNumbers.forEach(stat => {
+        const finalValue = stat.textContent;
+        const numericValue = parseInt(finalValue.replace(/\D/g, ''));
+        
+        if (numericValue) {
+            let currentValue = 0;
+            const increment = numericValue / 100;
+            const timer = setInterval(() => {
+                currentValue += increment;
+                if (currentValue >= numericValue) {
+                    stat.textContent = finalValue;
+                    clearInterval(timer);
+                } else {
+                    stat.textContent = Math.floor(currentValue) + (finalValue.includes('+') ? '+' : '');
+                }
+            }, 20);
+        }
+    });
+}
+
+// Trigger stats animation when in view
+const statsObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateStats();
+            statsObserver.unobserve(entry.target);
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const statsContainer = document.querySelector('.stats-container');
+    if (statsContainer) {
+        statsObserver.observe(statsContainer);
+    }
+});
+
+// Keyboard navigation support
+document.addEventListener('keydown', function(e) {
+    // ESC key to go back to landing from FitSync
+    if (e.key === 'Escape') {
+        const fitsyncPage = document.getElementById('fitsync-page');
+        if (fitsyncPage && fitsyncPage.classList.contains('active')) {
+            showLanding();
+        }
+    }
+});
+
+// Touch gestures for mobile (basic swipe to go back)
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.addEventListener('touchstart', function(e) {
+    touchStartX = e.changedTouches[0].screenX;
+});
+
+document.addEventListener('touchend', function(e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    const swipeThreshold = 100;
+    const swipeDistance = touchEndX - touchStartX;
+    
+    // Swipe right to go back (only on FitSync page)
+    if (swipeDistance > swipeThreshold) {
+        const fitsyncPage = document.getElementById('fitsync-page');
+        if (fitsyncPage && fitsyncPage.classList.contains('active')) {
+            showLanding();
+        }
+    }
+}
+
+// Error handling
+window.addEventListener('error', function(e) {
+    console.error('JavaScript error:', e.error);
+    // In production, you might want to send errors to a logging service
+});
+
+// Console easter egg
+console.log(`
+🏗️ BuildStack.app - Developer Console
+
+Thanks for checking out the code! 
+Built with ❤️ in Nairobi, Kenya
+
+Interested in collaborating? 
+Email: hello@buildstack.app
+
+Current stats:
+- Pure HTML/CSS/JS (no frameworks)
+- Mobile-first responsive design
+- Optimized for performance
+- SEO-friendly structure
+`);
+
+console.log('🚀 Ready to build the future!');
+
+// Initialize everything when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('🎉 BuildStack.app loaded successfully!');
+    
+    // Add any initialization code here
+    
+    // Optional: Preload FitSync page assets
+    // preloadFitSyncAssets();
+});
+
+// Optional: Preload function for better UX
+function preloadFitSyncAssets() {
+    // Preload any images or assets for FitSync page
+    // This improves perceived performance when navigating
+    const link = document.createElement('link');
+    link.rel = 'prefetch';
+    link.href = '#fitsync-assets';
+    document.head.appendChild(link);
+}
+    </script>
+
+    <style>
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: #0f172a;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Page Management */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Background Effects */
+.background-effects {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.floating-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.3;
+    animation: float 8s ease-in-out infinite;
+}
+
+.orb-1 {
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(45deg, #8b5cf6, #06b6d4);
+    top: -160px;
+    right: -160px;
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    width: 320px;
+    height: 320px;
+    background: linear-gradient(45deg, #06b6d4, #3b82f6);
+    bottom: -160px;
+    left: -160px;
+    animation-delay: 2s;
+}
+
+.orb-3 {
+    width: 240px;
+    height: 240px;
+    background: linear-gradient(45deg, #ec4899, #8b5cf6);
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation-delay: 4s;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    25% { transform: translateY(-20px) rotate(5deg); }
+    50% { transform: translateY(-10px) rotate(-5deg); }
+    75% { transform: translateY(-30px) rotate(3deg); }
+}
+
+/* Particles */
+.particles::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, white, transparent),
+        radial-gradient(2px 2px at 40px 70px, white, transparent),
+        radial-gradient(1px 1px at 90px 40px, white, transparent),
+        radial-gradient(1px 1px at 130px 80px, white, transparent),
+        radial-gradient(2px 2px at 160px 30px, white, transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    animation: particles 20s linear infinite;
+    opacity: 0.3;
+}
+
+@keyframes particles {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-100px); }
+}
+
+/* Header Styles */
+.modern-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-icon {
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+    color: white;
+}
+
+.logo-text h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff, #93c5fd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.logo-text p {
+    font-size: 0.875rem;
+    color: #93c5fd;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.contact-btn {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.25);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.sparkle {
+    color: #fbbf24;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.title-line {
+    display: block;
+    background: linear-gradient(135deg, #ffffff, #93c5fd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.title-highlight {
+    display: block;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    color: #93c5fd;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+}
+
+.hero-description strong {
+    color: white;
+    font-weight: 600;
+}
+
+/* Stats Container */
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: scale(1.1);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #93c5fd;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 3rem;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 3rem;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+    color: white;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: all 0.5s ease;
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #1d4ed8, #7c3aed, #db2777);
+    border-radius: 1rem;
+    filter: blur(1px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.cta-button:hover::before {
+    opacity: 1;
+}
+
+.cta-button:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 30px 60px rgba(59, 130, 246, 0.4);
+}
+
+.rocket-icon {
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover .rocket-icon {
+    transform: translateX(4px);
+}
+
+/* Apps Section */
+.apps-section {
+    padding: 5rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 900;
+    background: linear-gradient(135deg, #ffffff, #93c5fd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.25rem;
+    color: #93c5fd;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.apps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.app-card {
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.app-card:hover {
+    transform: translateY(-16px);
+}
+
+.card-glow {
+    position: absolute;
+    inset: -4px;
+    border-radius: 1.5rem;
+    padding: 4px;
+    opacity: 0.25;
+    transition: opacity 0.5s ease;
+    filter: blur(20px);
+}
+
+.app-card:hover .card-glow {
+    opacity: 0.75;
+}
+
+.fitsync-glow {
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+}
+
+.studybuddy-glow {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
+
+.taskmaster-glow {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+}
+
+.card-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.app-card:hover .card-content {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.status-badge {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+}
+
+.status-badge.available {
+    background: linear-gradient(135deg, #10b981, #059669);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.status-badge.coming-soon {
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+}
+
+.app-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.app-card:hover .app-icon {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.fitsync-icon {
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.25);
+}
+
+.studybuddy-icon {
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.25);
+}
+
+.taskmaster-icon {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    box-shadow: 0 20px 40px rgba(245, 158, 11, 0.25);
+}
+
+.app-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.app-card:hover .app-title {
+    background: linear-gradient(135deg, #93c5fd, #8b5cf6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.app-description {
+    color: #93c5fd;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.features-list {
+    margin-bottom: 2rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: #93c5fd;
+}
+
+.feature-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-radius: 50%;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+}
+
+.app-button {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.fitsync-btn {
+    background: linear-gradient(135deg, #10b981, #3b82f6);
+    color: white;
+    box-shadow: 0 10px 25px rgba(16, 185, 129, 0.25);
+}
+
+.fitsync-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(16, 185, 129, 0.4);
+}
+
+.app-button.disabled {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    cursor: not-allowed;
+}
+
+/* Tools Section */
+.tools-section {
+    padding: 5rem 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.tool-card {
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-16px);
+}
+
+.tool-glow {
+    position: absolute;
+    inset: -4px;
+    border-radius: 1.5rem;
+    padding: 4px;
+    opacity: 0.25;
+    transition: opacity 0.5s ease;
+    filter: blur(20px);
+}
+
+.tool-card:hover .tool-glow {
+    opacity: 0.75;
+}
+
+.qr-glow {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+}
+
+.upcoming-glow {
+    background: linear-gradient(135deg, #6b7280, #4b5563);
+}
+
+.tool-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.tool-card:hover .tool-content {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.tool-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto 1.5rem;
+    border-radius: 1.5rem;
+    transition: all 0.5s ease;
+}
+
+.tool-card:hover .tool-icon {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.qr-icon {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    box-shadow: 0 20px 40px rgba(245, 158, 11, 0.25);
+}
+
+.upcoming-icon {
+    background: linear-gradient(135deg, #6b7280, #4b5563);
+    box-shadow: 0 20px 40px rgba(107, 114, 128, 0.25);
+}
+
+.tool-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tool-card:hover .tool-title {
+    background: linear-gradient(135deg, #93c5fd, #f59e0b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.tool-description {
+    color: #93c5fd;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.tool-features {
+    margin-bottom: 2rem;
+}
+
+.tool-feature {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: #93c5fd;
+}
+
+.tool-feature-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    border-radius: 50%;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+}
+
+.tool-card.upcoming .tool-feature-check {
+    background: linear-gradient(135deg, #6b7280, #4b5563);
+    box-shadow: 0 4px 15px rgba(107, 114, 128, 0.4);
+}
+
+.tool-button {
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.qr-btn {
+    background: linear-gradient(135deg, #f59e0b, #ef4444);
+    color: white;
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.25);
+}
+
+.qr-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(245, 158, 11, 0.4);
+}
+
+.tool-button.disabled {
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    cursor: not-allowed;
+}
+
+/* Features Section */
+.features-section {
+    padding: 5rem 0;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+}
+
+.feature-glow {
+    position: absolute;
+    inset: -4px;
+    border-radius: 1rem;
+    opacity: 0.25;
+    transition: opacity 0.5s ease;
+    filter: blur(15px);
+}
+
+.feature-card:hover .feature-glow {
+    opacity: 0.75;
+}
+
+.pink-glow {
+    background: linear-gradient(135deg, #ec4899, #be185d);
+}
+
+.purple-glow {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+}
+
+.orange-glow {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.feature-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.feature-card:hover .feature-content {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.feature-emoji {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.feature-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.feature-content p {
+    color: #93c5fd;
+    line-height: 1.6;
+}
+
+/* Signup Section */
+.signup-section {
+    padding: 5rem 0;
+}
+
+.signup-card {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.signup-glow {
+    position: absolute;
+    inset: -4px;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6, #ec4899);
+    border-radius: 1.5rem;
+    filter: blur(20px);
+    opacity: 0.75;
+}
+
+.signup-content {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1.5rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+.signup-content h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    background: linear-gradient(135deg, #ffffff, #93c5fd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 1rem;
+}
+
+.signup-content p {
+    font-size: 1.25rem;
+    color: #93c5fd;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.email-form {
+    display: flex;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.email-input {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.75rem;
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.email-input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.submit-btn {
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    color: white;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4);
+}
+
+.success-message {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #10b981, #059669);
+    border-radius: 1rem;
+    box-shadow: 0 20px 40px rgba(16, 185, 129, 0.3);
+}
+
+.success-emoji {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.success-message h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.success-message p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Footer */
+.footer {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-logo .logo-icon {
+    padding: 0.75rem;
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.25);
+}
+
+.footer-logo span {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ffffff, #93c5fd);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.footer-description {
+    font-size: 1.125rem;
+    color: #93c5fd;
+    margin-bottom: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #93c5fd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+}
+
+.footer-bottom p {
+    color: #64748b;
+}
+
+/* FitSync Page Styles */
+.fitsync-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+    padding: 2rem;
+}
+
+.fitsync-header {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+    text-decoration: none;
+}
+
+.back-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-4px);
+}
+
+.fitsync-title {
+    text-align: center;
+}
+
+.fitsync-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.fitsync-title h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.fitsync-title p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+.date-range {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+}
+
+.blue-card .stat-icon {
+    background: rgba(59, 130, 246, 0.2);
+    color: #93c5fd;
+}
+
+.green-card .stat-icon {
+    background: rgba(16, 185, 129, 0.2);
+    color: #6ee7b7;
+}
+
+.purple-card .stat-icon {
+    background: rgba(139, 92, 246, 0.2);
+    color: #c4b5fd;
+}
+
+.orange-card .stat-icon {
+    background: rgba(245, 158, 11, 0.2);
+    color: #fcd34d;
+}
+
+.stat-info {
+    flex: 1;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 0.25rem;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+}
+
+/* Schedule Section */
+.schedule-section {
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+.schedule-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.day-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.day-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.day-header h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+}
+
+.workout-type {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+}
+
+.monday .workout-type, .wednesday .workout-type {
+    background: rgba(16, 185, 129, 0.3);
+}
+
+.tuesday .workout-type, .thursday .workout-type {
+    background: rgba(245, 158, 11, 0.3);
+}
+
+.friday .workout-type.rest {
+    background: rgba(107, 114, 128, 0.3);
+}
+
+.saturday .workout-type {
+    background: rgba(139, 92, 246, 0.3);
+}
+
+.workout-details {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+}
+
+.workout-details p {
+    margin-bottom: 0.5rem;
+}
+
+.workout-details strong {
+    color: white;
+}
+
+/* Strava Section */
+.strava-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.strava-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.strava-card {
+    background: rgba(255, 133, 51, 0.1);
+    border: 1px solid rgba(255, 133, 51, 0.2);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.strava-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background: rgba(255, 133, 51, 0.2);
+    border-radius: 1rem;
+    color: #ff8533;
+}
+
+.strava-content {
+    flex: 1;
+}
+
+.strava-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.strava-content p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 1rem;
+}
+
+.strava-button {
+    background: #ff8533;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.strava-button:hover {
+    background: #e6752e;
+    transform: translateY(-2px);
+}
+
+.strava-features {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.strava-features h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.strava-features ul {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.strava-features li {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-nav {
+        display: none;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .stats-container {
+        gap: 1.5rem;
+    }
+    
+    .stat-divider {
+        display: none;
+    }
+    
+    .apps-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .email-form {
+        flex-direction: column;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .strava-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .fitsync-container {
+        padding: 1rem;
+    }
+    
+    .fitsync-title h1 {
+        font-size: 2rem;
+    }
+    
+    .day-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    
+    .workout-type {
+        align-self: flex-end;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .hero-section {
+        padding: 3rem 0;
+    }
+    
+    .apps-section {
+        padding: 3rem 0;
+    }
+    
+    .tools-section {
+        padding: 3rem 0;
+    }
+    
+    .features-section {
+        padding: 3rem 0;
+    }
+    
+    .signup-section {
+        padding: 3rem 0;
+    }
+    
+    .signup-content {
+        padding: 2rem;
+    }
+    
+    .card-content {
+        padding: 1.5rem;
+    }
+    
+    .tool-content {
+        padding: 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .signup-content h2 {
+        font-size: 2rem;
+    }
+    
+    .fitsync-title h1 {
+        font-size: 1.75rem;
+    }
+    
+    .stat-value {
+        font-size: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+    }
+    
+    .schedule-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .day-card {
+        padding: 1rem;
+    }
+    
+    .strava-card {
+        padding: 1.5rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .strava-features {
+        padding: 1rem;
+    }
+}
+
+/* Additional mobile optimizations */
+@media (max-width: 320px) {
+    .hero-title {
+        font-size: 1.75rem;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .cta-button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .app-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .tool-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+}
+
+/* Performance optimizations */
+.reduced-motion * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+}
+
+.mobile .floating-orb {
+    display: none;
+}
+
+.mobile .particles::before {
+    display: none;
+}
+
+/* Print styles */
+@media print {
+    .background-effects,
+    .floating-orb,
+    .particles {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .modern-header,
+    .footer {
+        display: none !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .card-content,
+    .tool-content,
+    .feature-content,
+    .signup-content {
+        border: 2px solid white;
+    }
+    
+    .nav-link::after {
+        background: white;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    
+    .floating-orb {
+        animation: none;
+    }
+    
+    .particles::before {
+        animation: none;
+    }
+}
+
+/* Focus styles for accessibility */
+button:focus,
+a:focus,
+input:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* High DPI display optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .logo-icon svg,
+    .app-icon svg,
+    .tool-icon svg,
+    .stat-icon svg {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Dark mode enhancements (already dark by default) */
+@media (prefers-color-scheme: dark) {
+    /* Already optimized for dark mode */
+}
+
+/* Light mode alternative (if needed) */
+@media (prefers-color-scheme: light) {
+    /* Keep dark theme as it's part of the design */
+}
+    </style>
 </body>
 </html>
